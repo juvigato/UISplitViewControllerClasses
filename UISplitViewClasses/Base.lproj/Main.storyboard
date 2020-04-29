@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8WD-mK-44A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="bpg-WH-5sZ">
+            <objects>
+                <viewController id="EhC-W1-1ov" customClass="DetailViewController" customModule="UISplitViewClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAo-Cs-PbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV3-HZ-xhi">
+                                <rect key="frame" x="158" y="504" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qke-Zl-rXU">
+                                <rect key="frame" x="87" y="310" width="240" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Grb-mP-Iut"/>
+                                    <constraint firstAttribute="width" constant="240" id="VfE-6b-sR5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fV3-HZ-xhi" firstAttribute="centerX" secondItem="NAo-Cs-PbL" secondAttribute="centerX" id="4io-Kd-4bS"/>
+                            <constraint firstItem="qke-Zl-rXU" firstAttribute="centerX" secondItem="NAo-Cs-PbL" secondAttribute="centerX" id="Bbb-59-Tuh"/>
+                            <constraint firstItem="qke-Zl-rXU" firstAttribute="top" secondItem="An3-0y-g2i" secondAttribute="top" constant="222" id="PjO-2g-AKr"/>
+                            <constraint firstItem="fV3-HZ-xhi" firstAttribute="top" secondItem="qke-Zl-rXU" secondAttribute="bottom" constant="21" id="chD-Ox-9ti"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="An3-0y-g2i"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgCharac" destination="qke-Zl-rXU" id="7r2-Mx-rW3"/>
+                        <outlet property="lblNameCharac" destination="fV3-HZ-xhi" id="L18-u2-rcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJH-HP-JNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320.28985507246381" y="189.50892857142856"/>
+        </scene>
+        <!--Kimetsu Characters-->
+        <scene sceneID="2rp-Ad-Qnl">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="2Vw-XC-vLc" customClass="MasterViewController" customModule="UISplitViewClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nFL-cH-hXh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="TKa-VP-lwM" style="IBUITableViewCellStyleDefault" id="y06-az-2rH">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y06-az-2rH" id="4J5-Bq-sMX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TKa-VP-lwM">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Vw-XC-vLc" id="36H-sw-V6e"/>
+                            <outlet property="delegate" destination="2Vw-XC-vLc" id="Yvc-Ra-TvZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kimetsu Characters" id="cZH-fS-0fn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74n-3b-3Mb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="-458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gcC-u9-Vmp">
+            <objects>
+                <navigationController id="ycA-af-wja" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wNu-Ue-J2v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Vw-XC-vLc" kind="relationship" relationship="rootViewController" id="PDi-6Q-4Io"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qs4-Kl-Yez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-458"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="jX1-r6-dbL">
+            <objects>
+                <splitViewController id="8WD-mK-44A" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ycA-af-wja" kind="relationship" relationship="masterViewController" id="e03-JW-koW"/>
+                        <segue destination="EhC-W1-1ov" kind="relationship" relationship="detailViewController" id="dO4-ZV-Zj5"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYq-R7-9JN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599" y="-133"/>
+        </scene>
+    </scenes>
+</document>

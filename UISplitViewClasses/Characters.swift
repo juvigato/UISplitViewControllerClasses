@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 enum Charac {
-    case Tanjiro, Inosuke, Giyu
+    case Tanjiro, Inosuke, Giyu, Nezuko, Zenitsu, Rengoku
 //    case Tanjiro, Inosuke, Nezuko, Zenitsu, Musan, Rengoku, Giyu
     
     var image: UIImage {
@@ -21,6 +21,12 @@ enum Charac {
             return UIImage(named: "Inosuke")!
         case .Giyu:
             return UIImage(named: "Giyu")!
+        case .Nezuko:
+            return UIImage(named: "Nezuko")!
+        case .Rengoku:
+            return UIImage(named: "Rengoku")!
+        case .Zenitsu:
+            return UIImage(named: "Zenitsu")!
         }
     }
 }

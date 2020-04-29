@@ -19,7 +19,10 @@ class MasterViewController: UITableViewController {
     let characters = [
         Characters(name: "Tanjiro", description: "Brave", iconName: "Tanjiro", charac: .Tanjiro),
         Characters(name: "Inosuke", description: "Crazy", iconName: "Inosuke", charac: .Inosuke),
-        Characters(name: "Giyu", description: "Water", iconName: "Giyu", charac: .Giyu)
+        Characters(name: "Giyu", description: "Water", iconName: "Giyu", charac: .Giyu),
+        Characters(name: "Nezuko", description: "Kawaiiii", iconName: "Nezuko", charac: .Nezuko),
+        Characters(name: "Zenitsu", description: "ZzZzZz", iconName: "Zenitsu", charac: .Zenitsu),
+        Characters(name: "Rengoku", description: "i-i", iconName: "Rengoku", charac: .Rengoku)
     ]
         
     override func viewDidLoad() {
